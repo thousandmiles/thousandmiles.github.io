@@ -2,85 +2,147 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Working Experience - GitHub Pages</title>
+  <title>Forrest Long - Personal Resume</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- This style section gives the page a modern, clean look and makes it responsive -->
   <style>
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
-      background: #f9f9f9;
+      background: #f8fafc;
       color: #222;
     }
-    header {
-      background: #24292e;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    main {
+    .container {
       max-width: 700px;
       margin: 2rem auto;
       background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 1px 6px rgba(0,0,0,0.06);
-      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+      padding: 2.5rem;
     }
-    h1, h2 {
-      margin-top: 0;
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
     }
-    .experience {
+    h1 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+    }
+    .subtitle {
+      color: #555;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .contact {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+    section {
       margin-bottom: 2rem;
     }
-    .role {
+    h2 {
+      color: #2d6cdf;
+      font-size: 1.3rem;
+      border-bottom: 1px solid #e6e6e6;
+      padding-bottom: 0.4rem;
+      margin-bottom: 1rem;
+    }
+    .job {
+      margin-bottom: 1.2rem;
+    }
+    .job-title {
       font-weight: bold;
+      font-size: 1.1rem;
     }
-    .company {
-      color: #0366d6;
+    .job-company {
+      color: #2d6cdf;
     }
-    .period {
-      font-style: italic;
-      color: #555;
+    .job-date {
+      color: #888;
+      font-size: 0.95rem;
+      margin-left: 1rem;
     }
+    ul {
+      margin: 0.5rem 0 0.5rem 1.1rem;
+    }
+    /* Responsive styles for mobile devices */
     @media (max-width: 600px) {
-      main { padding: 1rem; }
+      .container { padding: 1rem; }
+      h1 { font-size: 2rem; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>My Working Experience</h1>
-    <p>Welcome to my professional portfolio</p>
-  </header>
-  <main>
-    <section class="experience">
-      <h2>Company A</h2>
-      <div class="role">Software Engineer</div>
-      <div class="period">Jan 2022 - Present</div>
-      <p>
-        - Developed scalable web applications using modern JavaScript frameworks.<br>
-        - Led a team of 4 engineers to deliver key features on schedule.<br>
-        - Improved API performance by 30% through optimization.
-      </p>
-    </section>
-    <section class="experience">
-      <h2>Company B</h2>
-      <div class="role">Intern Developer</div>
-      <div class="period">Jun 2021 - Dec 2021</div>
-      <p>
-        - Assisted in building internal tools and automation scripts.<br>
-        - Collaborated closely with product managers and designers.<br>
-        - Enhanced documentation and onboarding process.
-      </p>
-    </section>
+  <!-- Main content container -->
+  <div class="container">
+    <!-- Header section: your name and basic info -->
+    <header>
+      <h1>Forrest Long</h1>
+      <div class="subtitle">Software Engineer | Shanghai, China</div>
+      <div class="contact">
+        Email: <a href="mailto:youremail@example.com">youremail@example.com</a> |
+        GitHub: <a href="https://github.com/thousandmiles" target="_blank">thousandmiles</a>
+      </div>
+    </header>
+
+    <!-- About section -->
     <section>
-      <h2>Contact</h2>
+      <h2>About Me</h2>
       <p>
-        <a href="mailto:youremail@example.com">youremail@example.com</a>
-      </p>
-      <p>
-        <a href="https://github.com/Xiangyang-Long_rok" target="_blank">GitHub Profile</a>
+        <!-- Write a brief introduction about yourself here -->
+        Experienced software engineer passionate about building impactful solutions. Skilled in web development, backend systems, and teamwork.
       </p>
     </section>
-  </main>
+
+    <!-- Experience section -->
+    <section>
+      <h2>Experience</h2>
+      <!-- Example Job 1 -->
+      <div class="job">
+        <div>
+          <span class="job-title">Senior Software Engineer</span>
+          <span class="job-company">@ ABC Tech</span>
+          <span class="job-date">2022 - Present</span>
+        </div>
+        <ul>
+          <li>Led a team developing a scalable e-commerce platform using React and Node.js.</li>
+          <li>Improved API performance and reliability by 30%.</li>
+        </ul>
+      </div>
+      <!-- Example Job 2 -->
+      <div class="job">
+        <div>
+          <span class="job-title">Developer Intern</span>
+          <span class="job-company">@ XYZ Solutions</span>
+          <span class="job-date">2021 - 2022</span>
+        </div>
+        <ul>
+          <li>Automated data processing workflows with Python scripts.</li>
+          <li>Collaborated closely with cross-functional teams to deliver on project goals.</li>
+        </ul>
+      </div>
+      <!-- Add more jobs as needed -->
+    </section>
+
+    <!-- Education section -->
+    <section>
+      <h2>Education</h2>
+      <div>
+        <strong>B.Sc. in Computer Science</strong>, Shanghai University (2017 - 2021)
+      </div>
+    </section>
+
+    <!-- Skills section -->
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>Languages: JavaScript, Python, C++</li>
+        <li>Frameworks: React, Node.js, Express</li>
+        <li>Tools: Git, Docker, Linux</li>
+        <li>Languages: English (fluent), Chinese (native)</li>
+      </ul>
+    </section>
+  </div>
+  <!-- End of main content container -->
 </body>
 </html>
