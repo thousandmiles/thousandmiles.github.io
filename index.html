@@ -63,7 +63,7 @@
         }
 
         h2 {
-            color: #19bc68;
+            color: #fffff;
             font-size: 1.3rem;
             border-bottom: 1px solid #e6e6e6;
             padding-bottom: 0.4rem;
@@ -73,6 +73,7 @@
             text-transform: uppercase;
             /* Section titles in uppercase */
         }
+
 
         /* EXPERIENCE SECTION STYLING */
         .job {
@@ -134,6 +135,21 @@
             font-weight: 600;
         }
 
+        .product-link {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px dashed #19bc68;
+            transition: color 0.18s, border-bottom 0.18s;
+            padding-bottom: 1px;
+        }
+
+        .product-link:hover,
+        .product-link:focus {
+            color: #19bc68;
+            border-bottom: 1.5px solid #19bc68;
+            background: #f3fcf7;
+        }
+
         @media (max-width: 600px) {
             .container {
                 padding: 1rem;
@@ -159,7 +175,7 @@
 <body>
     <div class="container">
         <header>
-            <h1>Forrest Long</h1>
+            <h1>Forrest Xiangyang Long</h1>
             <div class="subtitle">Software Engineer | Singapore</div>
             <div class="contact">
                 Email: <a href="mailto:longxy98@foxmail.com">longxy98@foxmail.com</a> |
@@ -187,9 +203,22 @@
                 </div>
                 <div class="job-date">2024 - Present</div>
                 <ul class="job-bullets">
-                    <li>Assisted in the design and development of web applications, contributing to both front-end and back-end features.</li>
-                    <li>Collaborated with senior engineers and product managers to deliver project milestones on time.</li>
-                    <li>Participated in code reviews, bug fixing, and optimization for better user experience.</li>
+
+                    <li>
+                        Developed automation test frameworks for
+                        <a href="https://www.rockwellautomation.com/en-in/products/software/factorytalk/design-studio.html" target="_blank" class="product-link">FactoryTalk Design Studio</a>
+                        using Python and TypeScript, leveraging containers.
+                    </li>
+                    <li>
+                        Gained experience with
+                        <a href="https://www.rockwellautomation.com/en-us/products/software/factorytalk/designsuite/studio-5000/studio-5000-logix-designer.html" target="_blank" class="product-link">Studio 5000 Logix Designer</a>
+                        , including instruction implementation and execution.
+                    </li>
+
+                    <li>
+                        Contributed to new feature development in collaboration with cross-functional teams.
+                    </li>
+
                 </ul>
             </div>
             <div class="job">
@@ -202,8 +231,10 @@
                 </div>
                 <div class="job-date">2023 - 2024</div>
                 <ul class="job-bullets">
-                    <li>Supported academic projects involving data analysis and algorithm development.</li>
-                    <li>Worked with professors to implement and test research prototypes.</li>
+                    <li>Assisted in the design and development new features of <a href="https://www.rockwellautomation.com/en-in/products/software/factorytalk/operationsuite/view.html" target="_blank" class="product-link">FactoryTalk View</a>, contributing to both front-end and back-end features.</li>
+                    <li>Collaborated with senior engineers and product managers to deliver project milestones on time.</li>
+                    <li>Optimized the performance of critical components, bringing an 80% increase in speed.</li>
+                    <li>Participated in code reviews, bug fixing, and optimization for better user experience.</li>
                 </ul>
             </div>
             <div class="job">
@@ -216,30 +247,63 @@
                 </div>
                 <div class="job-date">2022 - 2023</div>
                 <ul class="job-bullets">
-                    <li>Supported academic projects involving data analysis and algorithm development.</li>
-                    <li>Worked with professors to implement and test research prototypes.</li>
+                    <li>Conducted a survey on the use of the C++ version of the CIP protocol library in C#.</li>
+                    <li>Worked with professors to implement and test prototypes of containerization of the CIP protocol.</li>
                 </ul>
             </div>
         </section>
 
         <section>
             <h2>Skills</h2>
+            <ul class="job-bullets">
+                <li>C/C++ (STL, MFC, COM), C# (MVVM, WPF), Python, TypeScript</li>
+                <li>Git, Docker, Linux, Jira, Confluence, QTest, Jenkins</li>
+                <li>Familiar with SAFe Agile framework</li>
+                <li>English (fluent), Chinese (native)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Awards</h2>
+            <ul class="job-bullets">
+                <li>Rookie of the Year, Rockwell Automation, 2024</li>
+                <li>Excellent Graduates of Liaoning Province, Dalian Maritime University, 2022</li>
+                <!-- Add more awards as needed -->
+            </ul>
+        </section>
+
+        <section>
+            <h2>Publications</h2>
             <ul>
-                <li>Languages: C/C++, C#, Python, TypeScript</li>
-                <li>Frameworks: WPF, MVVM, MFC, .NET</li>
-                <li>Tools: Git, Docker, Linux</li>
-                <li>Languages: English (fluent), Chinese (native)</li>
+                <li>
+                    Xu, H., <strong>Long, X.</strong>, &amp; Feng, X. (2025).
+                    <em>Automatic Underwater Single Image Enhancement Using New Prior and Compensation Strategy</em>.
+                    <strong>Circuits, Systems, and Signal Processing</strong>.
+                    <a href="https://doi.org/10.1007/s00034-025-03159-w" target="_blank" class="product-link">[DOI]</a>
+                </li>
+                <li>
+                    Xu, H., <strong>Long, X.</strong>, &amp; Wang, M. (2023).
+                    <em>UUGAN: a GAN-based approach towards underwater image enhancement using non-pairwise supervision</em>.
+                    <strong>International Journal of Machine Learning and Cybernetics, 14</strong>(3), 725-738.
+                    <a href="https://doi.org/10.1007/s13042-022-01659-8" target="_blank" class="product-link">[DOI]</a>
+                </li>
+                <li>
+                    Xu, H., <strong>Long, X.</strong>, Yu, Y., &amp; Zhu, D. (2022).
+                    <em>Toward underwater image enhancement: new dataset and white balance priors-based fusion network</em>.
+                    <strong>Journal of Electronic Imaging, 31</strong>(6), 063017.
+                    <a href="https://doi.org/10.1117/1.JEI.31.6.063017" target="_blank" class="product-link">[DOI]</a>
+                </li>
             </ul>
         </section>
 
         <section>
             <h2>Education</h2>
             <div>
-                <strong>M.Sc. in Control Engineering</strong>, Shanghai University (2021 – 2024)<br>
+                <strong>M.Sc. in Control Engineering</strong>, Dalian Maritime University (2021 – 2024)<br>
                 Focus: Control Theory and Image Processing
             </div>
             <div style="margin-top:0.7em;">
-                <strong>B.Sc. in Automation</strong>, Shanghai University (2017 – 2021)<br>
+                <strong>B.Sc. in Automation</strong>, Dalian Maritime University (2017 – 2021)<br>
                 Focus: C/C++ Language, Circuit Theory and Microcontroller Fundamentals
             </div>
         </section>
