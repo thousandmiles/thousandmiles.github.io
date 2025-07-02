@@ -1,148 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Forrest Long - Personal Resume</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- This style section gives the page a modern, clean look and makes it responsive -->
-  <style>
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      margin: 0;
-      background: #f8fafc;
-      color: #222;
-    }
-    .container {
-      max-width: 700px;
-      margin: 2rem auto;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
-      padding: 2.5rem;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 2.5rem;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin: 0.5rem 0;
-    }
-    .subtitle {
-      color: #555;
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
-    }
-    .contact {
-      margin-top: 0.5rem;
-      font-size: 1rem;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    h2 {
-      color: #2d6cdf;
-      font-size: 1.3rem;
-      border-bottom: 1px solid #e6e6e6;
-      padding-bottom: 0.4rem;
-      margin-bottom: 1rem;
-    }
-    .job {
-      margin-bottom: 1.2rem;
-    }
-    .job-title {
-      font-weight: bold;
-      font-size: 1.1rem;
-    }
-    .job-company {
-      color: #2d6cdf;
-    }
-    .job-date {
-      color: #888;
-      font-size: 0.95rem;
-      margin-left: 1rem;
-    }
-    ul {
-      margin: 0.5rem 0 0.5rem 1.1rem;
-    }
-    /* Responsive styles for mobile devices */
-    @media (max-width: 600px) {
-      .container { padding: 1rem; }
-      h1 { font-size: 2rem; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Forrest Long - Personal Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Inter font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background: #f8fafc;
+            color: #222;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+            padding: 2.5rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0.5rem 0;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            color: #555;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact {
+            margin-top: 0.5rem;
+            font-size: 1rem;
+            color: #1b1b1b;
+        }
+
+        .contact a {
+            color: #19bc68;
+            text-decoration: none;
+            margin-right: 0.5em;
+        }
+
+        .contact a:last-child {
+            margin-right: 0;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: #19bc68;
+            font-size: 1.3rem;
+            border-bottom: 1px solid #e6e6e6;
+            padding-bottom: 0.4rem;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+            font-weight: 600;
+            text-transform: uppercase;
+            /* Section titles in uppercase */
+        }
+
+        /* EXPERIENCE SECTION STYLING */
+        .job {
+            margin-bottom: 1.9rem;
+        }
+
+        .job-header {
+            display: grid;
+            grid-template-columns: 1.8fr 1fr;
+            align-items: baseline;
+            width: 100%;
+            margin-bottom: 0.1rem;
+            gap: 0.5rem;
+        }
+
+        .job-title {
+            font-weight: 400;
+            font-size: 1.08rem;
+            color: #444;
+        }
+
+        .job-location {
+            color: #888;
+            font-size: 0.97rem;
+            text-align: right;
+            min-width: 110px;
+        }
+
+        .job-date {
+            color: #888;
+            font-size: 0.97rem;
+            margin: 0.18rem 0 0.1rem 0;
+        }
+
+        .job-bullets {
+            margin: 0.55rem 0 0 1.2rem;
+            padding-left: 0;
+            font-size: 1.02rem;
+            color: #222;
+        }
+
+        .job-bullets li {
+            margin-bottom: 0.32rem;
+        }
+
+        .job-bullets em {
+            font-style: italic;
+            font-weight: 600;
+        }
+
+        .job-company a:hover {
+            text-decoration: underline;
+            color: #13914e;
+        }
+
+        .job-company a {
+            color: #19bc68;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .job-header {
+                grid-template-columns: 1fr;
+            }
+
+            .job-location {
+                text-align: left;
+                margin-top: 0.15rem;
+                min-width: 0;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <!-- Main content container -->
-  <div class="container">
-    <!-- Header section: your name and basic info -->
-    <header>
-      <h1>Forrest Long</h1>
-      <div class="subtitle">Software Engineer | Shanghai, China</div>
-      <div class="contact">
-        Email: <a href="mailto:youremail@example.com">youremail@example.com</a> |
-        GitHub: <a href="https://github.com/thousandmiles" target="_blank">thousandmiles</a>
-      </div>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Forrest Long</h1>
+            <div class="subtitle">Software Engineer | Singapore</div>
+            <div class="contact">
+                Email: <a href="mailto:longxy98@foxmail.com">longxy98@foxmail.com</a> |
+                GitHub: <a href="https://github.com/thousandmiles" target="_blank">thousandmiles</a> |
+                LinkedIn: <a href="https://www.linkedin.com/in/forrest-long-82150a260" target="_blank">Forrest Long</a>
+            </div>
+        </header>
 
-    <!-- About section -->
-    <section>
-      <h2>About Me</h2>
-      <p>
-        <!-- Write a brief introduction about yourself here -->
-        Experienced software engineer passionate about building impactful solutions. Skilled in web development, backend systems, and teamwork.
-      </p>
-    </section>
+        <section>
+            <h2>About Me</h2>
+            <p>
+                Versatile software engineer skilled in HMI development, desktop application, backend system, and automation with Python scripting. I bring a problem-solving mindset and enjoy working across the software stack to deliver robust and efficient solutions.
+            </p>
+        </section>
 
-    <!-- Experience section -->
-    <section>
-      <h2>Experience</h2>
-      <!-- Example Job 1 -->
-      <div class="job">
-        <div>
-          <span class="job-title">Senior Software Engineer</span>
-          <span class="job-company">@ ABC Tech</span>
-          <span class="job-date">2022 - Present</span>
-        </div>
-        <ul>
-          <li>Led a team developing a scalable e-commerce platform using React and Node.js.</li>
-          <li>Improved API performance and reliability by 30%.</li>
-        </ul>
-      </div>
-      <!-- Example Job 2 -->
-      <div class="job">
-        <div>
-          <span class="job-title">Developer Intern</span>
-          <span class="job-company">@ XYZ Solutions</span>
-          <span class="job-date">2021 - 2022</span>
-        </div>
-        <ul>
-          <li>Automated data processing workflows with Python scripts.</li>
-          <li>Collaborated closely with cross-functional teams to deliver on project goals.</li>
-        </ul>
-      </div>
-      <!-- Add more jobs as needed -->
-    </section>
+        <section>
+            <h2>Experience</h2>
+            <div class="job">
+                <div class="job-header">
+                    <div class="company-title">
+                        <span class="job-title">Software Engineer II</span>
+                        <span class="job-company"> @ <a href="https://www.rockwellautomation.com/" target="_blank">Rockwell Automation</a></span>
+                    </div>
+                    <div class="job-location">Singapore</div>
+                </div>
+                <div class="job-date">2024 - Present</div>
+                <ul class="job-bullets">
+                    <li>Assisted in the design and development of web applications, contributing to both front-end and back-end features.</li>
+                    <li>Collaborated with senior engineers and product managers to deliver project milestones on time.</li>
+                    <li>Participated in code reviews, bug fixing, and optimization for better user experience.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <div class="job-header">
+                    <div class="company-title">
+                        <span class="job-title">Software Engineer I</span>
+                        <span class="job-company"> @ <a href="https://www.rockwellautomation.com/" target="_blank">Rockwell Automation</a></span>
+                    </div>
+                    <div class="job-location">Dalian, China</div>
+                </div>
+                <div class="job-date">2023 - 2024</div>
+                <ul class="job-bullets">
+                    <li>Supported academic projects involving data analysis and algorithm development.</li>
+                    <li>Worked with professors to implement and test research prototypes.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <div class="job-header">
+                    <div class="company-title">
+                        <span class="job-title">Software Engineer Intern</span>
+                        <span class="job-company"> @ <a href="https://www.rockwellautomation.com/" target="_blank">Rockwell Automation</a></span>
+                    </div>
+                    <div class="job-location">Dalian, China</div>
+                </div>
+                <div class="job-date">2022 - 2023</div>
+                <ul class="job-bullets">
+                    <li>Supported academic projects involving data analysis and algorithm development.</li>
+                    <li>Worked with professors to implement and test research prototypes.</li>
+                </ul>
+            </div>
+        </section>
 
-    <!-- Education section -->
-    <section>
-      <h2>Education</h2>
-      <div>
-        <strong>B.Sc. in Computer Science</strong>, Shanghai University (2017 - 2021)
-      </div>
-    </section>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>Languages: C/C++, C#, Python, TypeScript</li>
+                <li>Frameworks: WPF, MVVM, MFC, .NET</li>
+                <li>Tools: Git, Docker, Linux</li>
+                <li>Languages: English (fluent), Chinese (native)</li>
+            </ul>
+        </section>
 
-    <!-- Skills section -->
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>Languages: JavaScript, Python, C++</li>
-        <li>Frameworks: React, Node.js, Express</li>
-        <li>Tools: Git, Docker, Linux</li>
-        <li>Languages: English (fluent), Chinese (native)</li>
-      </ul>
-    </section>
-  </div>
-  <!-- End of main content container -->
+        <section>
+            <h2>Education</h2>
+            <div>
+                <strong>M.Sc. in Control Engineering</strong>, Shanghai University (2021 – 2024)<br>
+                Focus: Control Theory and Image Processing
+            </div>
+            <div style="margin-top:0.7em;">
+                <strong>B.Sc. in Automation</strong>, Shanghai University (2017 – 2021)<br>
+                Focus: C/C++ Language, Circuit Theory and Microcontroller Fundamentals
+            </div>
+        </section>
+    </div>
 </body>
+
 </html>
